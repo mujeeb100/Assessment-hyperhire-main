@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landing-bg {
+  background-image: linear-gradient(
+    145deg,
+    hsl(190deg 92% 41%) 0%,
+    hsl(191deg 100% 39%) 11%,
+    hsl(192deg 100% 40%) 21%,
+    hsl(193deg 100% 40%) 31%,
+    hsl(194deg 100% 41%) 41%,
+    hsl(195deg 100% 41%) 50%,
+    hsl(197deg 100% 41%) 59%,
+    hsl(200deg 100% 41%) 67%,
+    hsl(203deg 100% 41%) 75%,
+    hsl(206deg 100% 41%) 83%,
+    hsl(209deg 100% 40%) 91%,
+    hsl(213deg 92% 41%) 100%
+  );
+}
+
+.glassmorphism_1 {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* chat bubble styles */
+.talk-bubble {
+  display: inline-block;
+  position: relative;
+  height: auto;
+  background: white;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  margin-bottom: 30px;
+}
+.tri-right.btm-left-in:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  right: auto;
+  top: auto;
+  bottom: -40px;
+  border-color: transparent transparent transparent transparent;
+}
+.tri-right.btm-left-in:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 20px;
+  right: auto;
+  top: auto;
+  bottom: -19px;
+  border: 10px solid;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-color: white transparent transparent;
+}
+.round {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+.talktext {
+  padding: 10px;
+  text-align: left;
+  line-height: 1.5em;
+}
+.talk-bubble_2 {
+  display: inline-block;
+  position: relative;
+  height: auto;
+  background: #e9f7ef;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  margin-bottom: 30px;
+}
+.tri-right.btm-left-in_2:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  right: auto;
+  top: auto;
+  bottom: -40px;
+  border-color: transparent transparent transparent transparent;
+}
+.tri-right.btm-left-in_2:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 60px;
+  right: auto;
+  top: auto;
+  bottom: -19px;
+  border: 10px solid;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-color: #e9f7ef transparent transparent;
+}
+
+/* Floating animation */
+.floatingAnimation {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
